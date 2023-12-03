@@ -1,4 +1,4 @@
-// Site Footer - Updated September 8, 2023
+// Site Footer - Updated December 3, 2023
 function noop() { }
 function assign(tar, src) {
     // @ts-ignore
@@ -2772,7 +2772,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (67:8) {#each social_links as {link, icon}}
+// (70:8) {#each social_links as {link, icon}}
 function create_each_block(ctx) {
 	let li;
 	let a;
@@ -2811,7 +2811,7 @@ function create_each_block(ctx) {
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[4].url);
 			attr(a, "aria-label", a_aria_label_value = /*icon*/ ctx[5]);
-			attr(a, "class", "svelte-1excgdw");
+			attr(a, "class", "svelte-s1qrgs");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -2861,10 +2861,14 @@ function create_fragment(ctx) {
 	let t2;
 	let t3;
 	let span1;
-	let a;
 	let t4;
+	let a0;
 	let t5;
 	let t6;
+	let a1;
+	let t7;
+	let t8;
+	let t9;
 	let ul;
 	let current;
 	let each_value = /*social_links*/ ctx[0];
@@ -2890,10 +2894,14 @@ function create_fragment(ctx) {
 			t2 = text(t2_value);
 			t3 = space();
 			span1 = element("span");
-			a = element("a");
-			t4 = text("Primo");
-			t5 = text(" Powered");
-			t6 = space();
+			t4 = text("Made by ");
+			a0 = element("a");
+			t5 = text("Yann Hodiesne");
+			t6 = text(".\n        ");
+			a1 = element("a");
+			t7 = text("Primo");
+			t8 = text(" Powered.");
+			t9 = space();
 			ul = element("ul");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -2919,13 +2927,19 @@ function create_fragment(ctx) {
 			t3 = claim_space(div0_nodes);
 			span1 = claim_element(div0_nodes, "SPAN", { class: true });
 			var span1_nodes = children(span1);
-			a = claim_element(span1_nodes, "A", { href: true, class: true });
-			var a_nodes = children(a);
-			t4 = claim_text(a_nodes, "Primo");
-			a_nodes.forEach(detach);
-			t5 = claim_text(span1_nodes, " Powered");
+			t4 = claim_text(span1_nodes, "Made by ");
+			a0 = claim_element(span1_nodes, "A", { href: true, class: true });
+			var a0_nodes = children(a0);
+			t5 = claim_text(a0_nodes, "Yann Hodiesne");
+			a0_nodes.forEach(detach);
+			t6 = claim_text(span1_nodes, ".\n        ");
+			a1 = claim_element(span1_nodes, "A", { href: true, class: true });
+			var a1_nodes = children(a1);
+			t7 = claim_text(a1_nodes, "Primo");
+			a1_nodes.forEach(detach);
+			t8 = claim_text(span1_nodes, " Powered.");
 			span1_nodes.forEach(detach);
-			t6 = claim_space(div0_nodes);
+			t9 = claim_space(div0_nodes);
 			ul = claim_element(div0_nodes, "UL", { class: true });
 			var ul_nodes = children(ul);
 
@@ -2940,14 +2954,16 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(hr, "class", "svelte-1excgdw");
-			attr(span0, "class", "copyright svelte-1excgdw");
-			attr(a, "href", "https://primo.so");
-			attr(a, "class", "svelte-1excgdw");
-			attr(span1, "class", "primo svelte-1excgdw");
-			attr(ul, "class", "svelte-1excgdw");
-			attr(div0, "class", "footer svelte-1excgdw");
-			attr(div1, "class", "section-container svelte-1excgdw");
+			attr(hr, "class", "svelte-s1qrgs");
+			attr(span0, "class", "copyright svelte-s1qrgs");
+			attr(a0, "href", "https://github.com/yannhodiesne");
+			attr(a0, "class", "svelte-s1qrgs");
+			attr(a1, "href", "https://primo.so");
+			attr(a1, "class", "svelte-s1qrgs");
+			attr(span1, "class", "primo svelte-s1qrgs");
+			attr(ul, "class", "svelte-s1qrgs");
+			attr(div0, "class", "footer svelte-s1qrgs");
+			attr(div1, "class", "section-container svelte-s1qrgs");
 		},
 		m(target, anchor) {
 			insert_hydration(target, footer, anchor);
@@ -2960,10 +2976,14 @@ function create_fragment(ctx) {
 			append_hydration(span0, t2);
 			append_hydration(div0, t3);
 			append_hydration(div0, span1);
-			append_hydration(span1, a);
-			append_hydration(a, t4);
-			append_hydration(span1, t5);
-			append_hydration(div0, t6);
+			append_hydration(span1, t4);
+			append_hydration(span1, a0);
+			append_hydration(a0, t5);
+			append_hydration(span1, t6);
+			append_hydration(span1, a1);
+			append_hydration(a1, t7);
+			append_hydration(span1, t8);
+			append_hydration(div0, t9);
 			append_hydration(div0, ul);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {

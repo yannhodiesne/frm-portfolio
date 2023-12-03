@@ -1,4 +1,4 @@
-// Site Navigation - Updated September 8, 2023
+// Site Navigation - Updated December 3, 2023
 function noop() { }
 const identity = x => x;
 function assign(tar, src) {
@@ -3051,7 +3051,7 @@ function get_each_context_1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (101:31) 
+// (103:31) 
 function create_if_block_4(ctx) {
 	let img;
 	let img_src_value;
@@ -3088,7 +3088,7 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (99:6) {#if logo.title}
+// (101:6) {#if logo.title}
 function create_if_block_3(ctx) {
 	let t_value = /*logo*/ ctx[0].title + "";
 	let t;
@@ -3112,7 +3112,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (106:6) {#each site_nav as { link }}
+// (108:6) {#each site_nav as { link }}
 function create_each_block_1(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[7].label + "";
@@ -3133,7 +3133,7 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-ngjace");
+			attr(a, "class", "link svelte-1bdrnf9");
 			attr(a, "href", a_href_value = /*link*/ ctx[7].url);
 			toggle_class(a, "active", /*link*/ ctx[7].url === window.location.pathname);
 		},
@@ -3158,7 +3158,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (118:31) 
+// (120:31) 
 function create_if_block_2(ctx) {
 	let img;
 	let img_src_value;
@@ -3195,7 +3195,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (116:6) {#if logo.title}
+// (118:6) {#if logo.title}
 function create_if_block_1(ctx) {
 	let t_value = /*logo*/ ctx[0].title + "";
 	let t;
@@ -3219,7 +3219,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (128:4) {#if mobileNavOpen}
+// (130:4) {#if mobileNavOpen}
 function create_if_block(ctx) {
 	let nav;
 	let t;
@@ -3276,9 +3276,9 @@ function create_if_block(ctx) {
 		h() {
 			attr(button, "id", "close");
 			attr(button, "aria-label", "Close Navigation");
-			attr(button, "class", "svelte-ngjace");
+			attr(button, "class", "svelte-1bdrnf9");
 			attr(nav, "id", "popup");
-			attr(nav, "class", "svelte-ngjace");
+			attr(nav, "class", "svelte-1bdrnf9");
 		},
 		m(target, anchor) {
 			insert_hydration(target, nav, anchor);
@@ -3352,7 +3352,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (130:8) {#each site_nav as { link }}
+// (132:8) {#each site_nav as { link }}
 function create_each_block(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[7].label + "";
@@ -3500,15 +3500,15 @@ function create_fragment(ctx) {
 		},
 		h() {
 			attr(a0, "href", "/");
-			attr(a0, "class", "logo svelte-ngjace");
-			attr(nav, "class", "svelte-ngjace");
-			attr(div0, "class", "desktop-nav svelte-ngjace");
+			attr(a0, "class", "logo svelte-1bdrnf9");
+			attr(nav, "class", "svelte-1bdrnf9");
+			attr(div0, "class", "desktop-nav svelte-1bdrnf9");
 			attr(a1, "href", "/");
-			attr(a1, "class", "logo svelte-ngjace");
+			attr(a1, "class", "logo svelte-1bdrnf9");
 			attr(button, "id", "open");
 			attr(button, "aria-label", "Open mobile navigation");
-			attr(div1, "class", "mobile-nav svelte-ngjace");
-			attr(header, "class", "section-container svelte-ngjace");
+			attr(div1, "class", "mobile-nav svelte-1bdrnf9");
+			attr(header, "class", "section-container svelte-1bdrnf9");
 		},
 		m(target, anchor) {
 			insert_hydration(target, header, anchor);
