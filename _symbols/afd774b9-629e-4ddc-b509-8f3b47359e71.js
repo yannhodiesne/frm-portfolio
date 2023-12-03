@@ -2772,7 +2772,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (70:8) {#each social_links as {link, icon}}
+// (82:8) {#each social_links as {link, icon}}
 function create_each_block(ctx) {
 	let li;
 	let a;
@@ -2811,7 +2811,7 @@ function create_each_block(ctx) {
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[4].url);
 			attr(a, "aria-label", a_aria_label_value = /*icon*/ ctx[5]);
-			attr(a, "class", "svelte-s1qrgs");
+			attr(a, "class", "svelte-x26a4o");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -2954,16 +2954,16 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(hr, "class", "svelte-s1qrgs");
-			attr(span0, "class", "copyright svelte-s1qrgs");
+			attr(hr, "class", "svelte-x26a4o");
+			attr(span0, "class", "copyright svelte-x26a4o");
 			attr(a0, "href", "https://github.com/yannhodiesne");
-			attr(a0, "class", "svelte-s1qrgs");
+			attr(a0, "class", "svelte-x26a4o");
 			attr(a1, "href", "https://primo.so");
-			attr(a1, "class", "svelte-s1qrgs");
-			attr(span1, "class", "primo svelte-s1qrgs");
-			attr(ul, "class", "svelte-s1qrgs");
-			attr(div0, "class", "footer svelte-s1qrgs");
-			attr(div1, "class", "section-container svelte-s1qrgs");
+			attr(a1, "class", "svelte-x26a4o");
+			attr(span1, "class", "primo svelte-x26a4o");
+			attr(ul, "class", "svelte-x26a4o");
+			attr(div0, "class", "footer svelte-x26a4o");
+			attr(div1, "class", "section-container svelte-x26a4o");
 		},
 		m(target, anchor) {
 			insert_hydration(target, footer, anchor);
