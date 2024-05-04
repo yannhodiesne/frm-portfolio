@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Oswald, Mulish } from "next/font/google";
 import "./globals.css";
+import Banner from "@/components/banner/banner";
 
 const headersFont = Oswald({
   subsets: ["latin"],
@@ -25,16 +26,12 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${headersFont.variable} ${bodyFont.variable}`}>
-        <div className="2xl:container 2xl:mx-auto bg-yellow-100">
-          <div className="flex flex-row flex-wrap py-4">
-            <aside className="w-full sm:w-1/3 md:w-1/4 px-2">
-              <div className="sticky top-0 p-4 w-full">
-                <ul className="flex flex-col overflow-hidden bg-blue-500">
-                  Réseaux sociaux
-                </ul>
-              </div>
+        <div className="2xl:container 2xl:mx-auto min-h-screen flex flex-col">
+          <div className="grow grid grid-cols-[auto_1fr] gap-4 p-8">
+            <aside className="px-2">
+              <Banner vertical />
             </aside>
-            <main role="main" className="h-screen w-full sm:w-2/3 md:w-3/4 pt-1 px-2">
+            <main role="main">
               {children}
             </main>
           </div>

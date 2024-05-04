@@ -63,6 +63,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@flaticon/flaticon-uicons@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "@flaticon/flaticon-uicons@npm:3.2.1"
+  dependencies:
+    esbuild-linux-64: "npm:^0.14.5"
+  dependenciesMeta:
+    esbuild-linux-64:
+      optional: true
+  checksum: 10c0/c8f4042323256f305ae8a486a68344b6e587574752717b6e23c599bca60a1cee85aaae55eb2108f512efdd81b9ad24cbd52c6dd0267d70a6e0f0608f1549e905
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.11.14":
   version: 0.11.14
   resolution: "@humanwhocodes/config-array@npm:0.11.14"
@@ -1234,6 +1246,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"esbuild-linux-64@npm:^0.14.5":
+  version: 0.14.54
+  resolution: "esbuild-linux-64@npm:0.14.54"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
 "escape-string-regexp@npm:^4.0.0":
   version: 4.0.0
   resolution: "escape-string-regexp@npm:4.0.0"
@@ -1622,6 +1641,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "frm-portfolio@workspace:."
   dependencies:
+    "@flaticon/flaticon-uicons": "npm:^3.2.1"
     "@types/node": "npm:^20.12.8"
     "@types/react": "npm:^18.3.1"
     "@types/react-dom": "npm:^18.3.0"
