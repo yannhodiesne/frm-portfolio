@@ -4,10 +4,17 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb));
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headers);
 }
 
 @layer utilities {
