@@ -4,12 +4,12 @@ import background from "./background.webp";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
-      <div className="grow relative">
+    <div className="mx-auto my-auto">
+      <div className="relative">
         <Image
           src={background}
           alt="Animated silly walk"
-          className="opacity-60 mx-auto my-auto"
+          className="opacity-60 max-h-[80vh] w-auto mx-auto"
           unoptimized
           priority
         />
@@ -19,8 +19,11 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="bg-red-100">
-        Menu
+
+      <div className="mx-auto w-auto pt-6 grid md:grid-flow-col md:auto-cols-auto md:gap-16 gap-12 text-4xl md:text-5xl lg:text-6xl justify-items-center">
+        <h1>DEMOREEL</h1>
+        <h1>GALLERY</h1>
+        <h1>ABOUT</h1>
       </div>
     </div>
   );

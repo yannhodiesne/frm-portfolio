@@ -1,18 +1,14 @@
 import "./banner.css";
 
 export default function Banner({
-  vertical
+  className
 }: Readonly<{
-  vertical?: boolean | undefined
+  className?: string | undefined
 }>) {
   const hoverAnimation = "transform transition duration-250 hover:scale-125";
 
-  const classes = vertical
-    ? "flex-col py-8"
-    : "flex-row px-8";
-
   return (
-    <div className={`text-2xl text-[#310404] flex gap-8 ${classes}`}>
+    <div className={`text-2xl flex gap-8 ${className}`}>
       <a className={hoverAnimation} href="#" target="_blank" title="Twitter">
         <i className="w-12 h-12 fi fi-brands-twitter"></i>
       </a>
