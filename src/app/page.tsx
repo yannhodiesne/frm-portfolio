@@ -3,6 +3,8 @@ import Image from "next/image";
 import background from "./background.webp";
 
 export default function Home() {
+  const menuHoverAnimation = "transform transition duration-250 hover:scale-[1.17] hover:text-[#8F040B]";
+
   return (
     <div className="mx-auto my-auto">
       <div className="relative">
@@ -10,6 +12,7 @@ export default function Home() {
           src={background}
           alt="Animated silly walk"
           className="opacity-60 max-h-[80svh] w-auto mx-auto"
+          draggable={false}
           unoptimized
           priority
         />
@@ -21,9 +24,15 @@ export default function Home() {
       </div>
 
       <div className="mx-auto w-auto pt-6 grid md:grid-flow-col md:auto-cols-fr md:gap-16 gap-12 text-4xl md:text-5xl lg:text-6xl justify-items-center">
-        <h1 className="">DEMOREEL</h1>
-        <h1 className="">GALLERY</h1>
-        <h1 className="">ABOUT</h1>
+        <h1 className={menuHoverAnimation}>
+          <a href="">DEMOREEL</a>
+        </h1>
+        <h1 className={menuHoverAnimation}>
+          <a href="">GALLERY</a>
+        </h1>
+        <h1 className={menuHoverAnimation}>
+          <a href="">ABOUT</a>
+        </h1>
       </div>
     </div>
   );

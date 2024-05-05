@@ -5,7 +5,7 @@ export default function Banner({
 }: Readonly<{
   className?: string | undefined
 }>) {
-  const hoverAnimation = "transform transition duration-250 hover:scale-125";
+  const hoverAnimation = "transform transition duration-250 hover:scale-125 hover:text-[#8F040B]";
 
   return (
     <div className={`text-2xl flex gap-8 ${className}`}>

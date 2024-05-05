@@ -11,6 +11,7 @@ export default function Logo({
       src={logo}
       alt="Fanny Regeste Mistral"
       className={className}
+      draggable={false}
       priority
     />
   );
