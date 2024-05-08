@@ -14,10 +14,10 @@ export default function PageLayout({
           <Logo className="h-full w-auto mx-auto" />
         </Link>
       </header>
-      <main className="flex flex-col justify-center grow xl:grow-0 min-h-[50vh] py-8">
+      <main className="flex flex-col justify-center grow min-h-[50vh] py-8">
         {children}
       </main>
-      <footer><Banner className="justify-center pb-4 pt-2" /></footer>
+      <footer><Banner className="justify-center pb-8 pt-2" /></footer>
     </div>
   );
 }

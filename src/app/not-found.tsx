@@ -11,7 +11,10 @@ export default function NotFoundPage() {
           src={image}
           draggable={false}
           alt="404 : not found"
-          className="max-h-[60vh] w-auto mx-auto"
+          className={`
+            min-h-[45vh] w-auto object-cover
+            md:max-h-[60vh] md:mx-auto
+          `}
         />
       </Link>
     </PageLayout>
