@@ -30,6 +30,7 @@ function GalleryButton({
         height={1920}
         width={1080}
         alt={children}
+        draggable={false}
         className="transition duration-300 object-cover object-center group-hover:brightness-50"
       />
     </Link>
@@ -39,16 +40,16 @@ function GalleryButton({
 export default function GalleryPage() {
   return (
     <div className="w-2/3 mx-auto grid grid-cols-1 gap-4 md:grid-cols-2">
-      <GalleryButton path="/wip" imageUrl="https://placehold.co/1920x1080/png">
+      <GalleryButton path="/pages/wip" imageUrl="https://placehold.co/1920x1080/png">
         Storyboard
       </GalleryButton>
-      <GalleryButton path="/wip" imageUrl="https://placehold.co/1920x1080/png">
+      <GalleryButton path="/pages/wip" imageUrl="https://placehold.co/1920x1080/png">
         Vis dev/bg
       </GalleryButton>
-      <GalleryButton path="/wip" imageUrl="https://placehold.co/1920x1080/png">
+      <GalleryButton path="/pages/wip" imageUrl="https://placehold.co/1920x1080/png">
         Short movie: The origin of world and men
       </GalleryButton>
-      <GalleryButton path="/wip" imageUrl="https://placehold.co/1920x1080/png">
+      <GalleryButton path="/pages/wip" imageUrl="https://placehold.co/1920x1080/png">
         Personal work
       </GalleryButton>
     </div>
