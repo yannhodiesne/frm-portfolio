@@ -6,7 +6,7 @@ export default function Banner({
   const hoverAnimation = "transform transition duration-250 hover:scale-125 hover:text-[#8F040B]";
 
   return (
-    <div className={`text-2xl flex gap-8 ${className}`}>
+    <div className={`text-2xl flex gap-8 ${className ?? ""}`}>
       <a draggable={false} className={hoverAnimation} href="https://twitter.com/MimosaFRM" target="_blank" title="Twitter">
         <i className="fi fi-brands-twitter"></i>
       </a>

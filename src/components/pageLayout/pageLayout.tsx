@@ -9,12 +9,12 @@ export default function PageLayout({
 }>) {
   return (
     <div className="flex flex-col min-h-screen">
-      <header>
+      <header className="w-full h-36">
         <Link href="/">
-          <Logo className="w-auto h-36 mx-auto" />
+          <Logo className="h-full w-auto mx-auto" />
         </Link>
       </header>
-      <main className="grow xl:grow-0 min-h-48 py-8">
+      <main className="grow xl:grow-0 min-h-[50vh] py-8">
         {children}
       </main>
       <footer><Banner className="justify-center pb-4 pt-2" /></footer>
