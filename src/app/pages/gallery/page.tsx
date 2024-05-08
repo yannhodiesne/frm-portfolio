@@ -49,7 +49,7 @@ export default function GalleryPage() {
       <GalleryButton path="/pages/storyboard" image={storyboard}>
         Storyboard
       </GalleryButton>
-      <GalleryButton path="/pages/wip" image={visdevBg}>
+      <GalleryButton path="/pages/visdevbg" image={visdevBg}>
         Visual development / background
       </GalleryButton>
       <GalleryButton path="/pages/wip" image={shortMovie}>

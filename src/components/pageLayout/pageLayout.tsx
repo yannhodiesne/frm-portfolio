@@ -14,7 +14,7 @@ export default function PageLayout({
           <Logo className="h-full w-auto mx-auto" />
         </Link>
       </header>
-      <main className="2xl:container 2xl:mx-auto flex flex-col justify-center grow min-h-[50vh] px-8">
+      <main className="2xl:container 2xl:mx-auto flex flex-col justify-center grow min-h-[50vh]">
         {children}
       </main>
       <footer className="bg-[rgb(var(--background-rgb))]">
