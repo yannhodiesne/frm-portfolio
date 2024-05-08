@@ -1,8 +1,9 @@
+@import "normalize.css";
+@import "~@flaticon/flaticon-uicons/css/all/all.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import "~@flaticon/flaticon-uicons/css/all/all.css";
 
 :root {
   --foreground-rgb: 49, 4, 4;
