@@ -1,3 +1,4 @@
+import Script from "next/script";
 import Image from "next/image";
 
 export default function StoryboardPage() {
@@ -18,12 +19,15 @@ export default function StoryboardPage() {
             &ldquo;Potobot&rdquo; (Xilam animation)<br />
           </p>
         </div>
-        <Image
-          src="https://placehold.co/1920x1080/png"
-          alt="Demo reel"
-          height={1080}
-          width={1920}
-        />
+        <div className="relative aspect-[16/9]">
+          <iframe
+            src="https://player.vimeo.com/video/901255300?h=0752843f64"
+            className="absolute top-0 left-0 w-full h-full border-0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen>
+          </iframe>
+        </div>
+        <Script src="https://player.vimeo.com/api/player.js"></Script>
       </div>
       <div className="grid grid-flow-row gap-8 md:grid-flow-col md:auto-cols-fr">
         <Image
