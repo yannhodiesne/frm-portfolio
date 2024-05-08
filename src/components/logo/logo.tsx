@@ -4,7 +4,7 @@ import logo from "./logo.png";
 export default function Logo({
   className
 }: Readonly<{
-  className: string | undefined
+  className?: string | undefined
 }>) {
   return (
     <Image

@@ -27,14 +27,7 @@ export default function RootLayout({
     <html lang="fr">
       <body className={`${headersFont.variable} ${bodyFont.variable}`}>
         <div className="2xl:container 2xl:mx-auto">
-          <div className="flex flex-col md:flex-row gap-4 p-8">
-            <aside>
-              <Banner className="flex-row px-8 justify-center md:flex-col md:px-0 md:py-8" />
-            </aside>
-            <main role="main" className="grow">
-              {children}
-            </main>
-          </div>
+          {children}
         </div>
       </body>
     </html>
