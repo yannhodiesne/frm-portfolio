@@ -9,12 +9,12 @@ function GalleryButton({
   children,
   path,
   image,
-  className
+  objectClass
 }: Readonly<{
   children: string,
   path: string,
   image: StaticImageData,
-  className?: string | undefined
+  objectClass?: string | undefined
 }>) {
   return (
     <Link
@@ -36,8 +36,8 @@ function GalleryButton({
         alt={children}
         draggable={false}
         className={`
-          h-full transition duration-300 object-cover object-center group-hover:brightness-50
-          ${className ?? ""}`}
+          h-full transition duration-300 object-cover group-hover:brightness-50
+          ${objectClass ?? "object-center"}`}
       />
     </Link>
   );
@@ -46,7 +46,7 @@ function GalleryButton({
 export default function GalleryPage() {
   return (
     <div className="w-2/3 mx-auto grid grid-cols-1 gap-4 md:grid-cols-2">
-      <GalleryButton path="/pages/wip" image={storyboard}>
+      <GalleryButton path="/pages/storyboard" image={storyboard}>
         Storyboard
       </GalleryButton>
       <GalleryButton path="/pages/wip" image={visdevBg}>
@@ -55,7 +55,7 @@ export default function GalleryPage() {
       <GalleryButton path="/pages/wip" image={shortMovie}>
         Short movie: The origin of world and men
       </GalleryButton>
-      <GalleryButton path="/pages/wip" image={personalWork} className="object-[50%_10%]">
+      <GalleryButton path="/pages/wip" image={personalWork} objectClass="object-[50%_10%]">
         Personal work
       </GalleryButton>
     </div>
