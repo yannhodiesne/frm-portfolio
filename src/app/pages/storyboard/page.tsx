@@ -1,5 +1,4 @@
 import Script from "next/script";
-import Image from "next/image";
 
 export default function StoryboardPage() {
   return (
@@ -29,35 +28,27 @@ export default function StoryboardPage() {
         </div>
         <Script src="https://player.vimeo.com/api/player.js"></Script>
       </div>
+      <p className="text-2xl">
+        Below you&apos;ll find some personal work and projects.
+      </p>
       <div className="grid grid-flow-row gap-8 md:grid-flow-col md:auto-cols-fr">
-        <Image
-          src="https://placehold.co/1920x1080/png"
-          alt="Placeholder"
-          height={1080}
-          width={1920}
-          className="md:h-52 w-auto"
-        />
-        <Image
-          src="https://placehold.co/1920x1080/png"
-          alt="Placeholder"
-          height={1080}
-          width={1920}
-          className="md:h-52 w-auto"
-        />
-        <Image
-          src="https://placehold.co/1920x1080/png"
-          alt="Placeholder"
-          height={1080}
-          width={1920}
-          className="md:h-52 w-auto"
-        />
-        <Image
-          src="https://placehold.co/1920x1080/png"
-          alt="Placeholder"
-          height={1080}
-          width={1920}
-          className="md:h-52 w-auto"
-        />
+        {[
+          "https://www.youtube-nocookie.com/embed/LajeXC2ahjw?si=1HZzAjcrw_Ek015v",
+          "https://www.youtube-nocookie.com/embed/KKCoz-hnEnQ?si=Pu_FtpbP0NjvarZE",
+          "https://www.youtube-nocookie.com/embed/a6CH9KwJP8M?si=KphZqZRAOtECunSW",
+          "https://www.youtube-nocookie.com/embed/7QGnh8BMWrA?si=Gp7roDI_Fi9mxzC_"
+        ].map(url => (
+          <div key={url} className="relative aspect-[16/9]">
+            <iframe
+              src={url}
+              className="absolute top-0 left-0 w-full h-full border-0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen>
+            </iframe>
+          </div>
+        ))}
       </div>
     </div>
   );
