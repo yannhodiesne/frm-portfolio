@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Oswald, Mulish } from "next/font/google";
 import "./globals.css";
-import Banner from "@/components/banner/banner";
 
 const headersFont = Oswald({
   subsets: ["latin"],
@@ -26,9 +25,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${headersFont.variable} ${bodyFont.variable}`}>
-        <div className="2xl:container 2xl:mx-auto">
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );

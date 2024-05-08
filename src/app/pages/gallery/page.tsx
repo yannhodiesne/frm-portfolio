@@ -26,7 +26,7 @@ function GalleryButton({
         text-center uppercase
         -translate-x-1/2 -translate-y-1/2
         text-white text-2xl
-        invisible z-10 group-hover:visible
+        md:invisible z-10 group-hover:visible
         transition-[visibility] duration-100
       `}>
         {children}
@@ -36,7 +36,7 @@ function GalleryButton({
         alt={children}
         draggable={false}
         className={`
-          h-full transition duration-300 object-cover group-hover:brightness-50
+          h-full transition duration-300 object-cover brightness-50 md:brightness-100 group-hover:brightness-50
           ${objectClass ?? "object-center"}`}
       />
     </Link>

@@ -3,7 +3,7 @@ import Script from "next/script";
 export default function StoryboardPage() {
   return (
     <div className="flex flex-col gap-8">
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 pt-8 md:pt-0">
         <div className="flex justify-center">
           <p className="my-auto text-center">
             <span className="text-2xl">
