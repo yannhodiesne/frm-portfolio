@@ -17,7 +17,7 @@ export default function PageLayout({
       <main className="2xl:container 2xl:mx-auto flex flex-col justify-center grow min-h-[50vh]">
         {children}
       </main>
-      <footer className="bg-[rgb(var(--background-rgb))]">
+      <footer>
         <Banner className="justify-center py-8" />
       </footer>
     </div>

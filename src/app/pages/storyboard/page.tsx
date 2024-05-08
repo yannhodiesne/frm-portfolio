@@ -7,7 +7,7 @@ export default function StoryboardPage() {
         <div className="flex justify-center">
           <p className="my-auto text-center">
             <span className="text-2xl">
-              Shoot me an email/dm me on LinkedIn if you want to see <br />
+              Shoot me an email/dm me on LinkedIn if you want to see <br className="hidden 2xl:block" />
               my top secret demoreel !<br />
               <br />
               It includes my work on theses series :<br />
