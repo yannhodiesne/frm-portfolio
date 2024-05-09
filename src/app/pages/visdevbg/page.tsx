@@ -53,7 +53,7 @@ export default function VisDevBgPage() {
         </div>
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
           {[
-            { img: evaBg3, class: "col-span-2"},
+            { img: evaBg3, class: "md:col-span-2"},
             { img: evaBg4, class: ""},
             { img: evaBg6, class: ""},
           ].map(image => (
@@ -67,7 +67,7 @@ export default function VisDevBgPage() {
       </div>
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
         {[
-            { img: evaBg1, class: "col-span-2"},
+            { img: evaBg1, class: "md:col-span-2"},
             { img: evaBg5, class: ""},
             { img: evaBg2, class: ""},
           ].map(image => (
@@ -81,7 +81,7 @@ export default function VisDevBgPage() {
       <p className="text-2xl text-center">
         Below you&apos;ll find a bunch of visuals I made during my internship at Caribara animation in Paris, 2019.<br />
         <br />
-        These are visual development for the series &ldquo;Billie and the Rockets&rdquo; (an original project), and &ldquo;Chooks&rdquo;,<br />
+        These are visual development for the series &ldquo;Billie and the Rockets&rdquo; (an original project), and &ldquo;Chooks&rdquo;, <br className="hidden 2xl:block" />
         adapted from Kerascoët&apos;s comic.
       </p>
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -99,8 +99,8 @@ export default function VisDevBgPage() {
           { img: brVd11, class: ""},
           { img: brVd12, class: ""},
           { img: brVd13, class: ""},
-          { img: brVd15, class: "col-span-2"},
-          { img: brVd14, class: "col-span-3"},
+          { img: brVd15, class: "md:col-span-2"},
+          { img: brVd14, class: "lg:col-span-3"},
           { img: tcVd1, class: ""},
           { img: tcVd2, class: ""},
           { img: tcVd3, class: ""},
