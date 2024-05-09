@@ -54,7 +54,12 @@ import tcopb17 from "./tcopb/17.jpg";
 export default function PersonalWorkPage() {
   return (
     <div className="flex flex-col gap-8">
-      <h1 className="text-2xl uppercase">Arlésiennes</h1>
+      <p className="text-3xl text-center">
+        On this page you&apos;ll find various work on personal projects, such as webcomics, illustrations and other shenanigans.
+      </p>
+      <p className="text-xl pt-16">
+        I was born in Arles in the south of France. These are arlesian girls, wearing the traditional costume.
+      </p>
       <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {[
           { img: arles2, class: "col-span-full lg:col-span-2"},
@@ -70,7 +75,10 @@ export default function PersonalWorkPage() {
           />
         ))}
       </div>
-      <h1 className="text-2xl uppercase">Dungeon & Dragons</h1>
+      <p className="text-xl pt-16">
+        Obsessed with D&D (especially Baldur&apos;s Gate 3), here are several posings of a Tiefling.<br />
+        I also made my friends take a &ldquo;Which D&D character are you?&rdquo; test and I drew them based on their answers!
+      </p>
       <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {[
           { img: dnd1, class: "col-span-full 2xl:col-span-2 2xl:col-start-2"},
@@ -98,7 +106,12 @@ export default function PersonalWorkPage() {
           />
         ))}
       </div>
-      <h1 className="text-2xl uppercase">The Curse Of Pirate&apos;s Bay</h1>
+      <p className="text-xl pt-16">
+        The Curse Of Pirate&apos;s Bay is a webcomic I started to publish in June, 2021. <br />
+        It&apos;s a story about Eva, a young girl, who accidentally finds herself stuck on a pirate boat. <br />
+        She has to hide who she really is to survive, in the hopes of coming back home someday.<br />
+        &gt;&gt; <a className="text-blue-500 underline" draggable={false} href="https://www.webtoons.com/en/canvas/the-curse-of-pirates-bay/list?title_no=383228" target="_blank">You can read it here!</a> &lt;&lt;
+      </p>
       <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {[
           { img: tcopb7, class: "col-span-full 2xl:col-span-2"},
@@ -126,7 +139,9 @@ export default function PersonalWorkPage() {
           />
         ))}
       </div>
-      <h1 className="text-2xl uppercase">Others</h1>
+      <p className="text-xl pt-16">
+        Those are participations to the Character Design Challenge, and fanarts.
+      </p>
       <div className="gap-4 grid grid-cols-1 lg:grid-cols-3">
         {[
           { img: others2, class: ""},
