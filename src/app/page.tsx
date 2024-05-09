@@ -8,7 +8,7 @@ export default function Home() {
   const menuHoverAnimation = "transform transition duration-250 hover:scale-[1.17] hover:text-[#8F040B]";
 
   return (
-    <div className="flex flex-col md:flex-row gap-4 p-8 justify-center min-h-screen">
+    <div className="flex flex-col md:flex-row gap-4 p-8 justify-center items-center min-h-screen">
       <aside>
         <Banner className="flex-row px-8 justify-center md:flex-col md:px-0 md:py-8" />
       </aside>

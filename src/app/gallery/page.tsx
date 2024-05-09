@@ -26,7 +26,7 @@ function GalleryButton({
         absolute top-1/2 left-1/2
         text-center uppercase
         -translate-x-1/2 -translate-y-1/2
-        text-white text-2xl
+        text-white text-lg md:text-xl lg:text-2xl
         md:invisible z-10 group-hover:visible
         transition-[visibility] duration-100
       `}>
