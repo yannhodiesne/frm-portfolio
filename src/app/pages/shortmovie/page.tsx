@@ -38,7 +38,7 @@ export default function ShortMoviePage() {
           allowFullScreen>
         </iframe>
       </div>
-      <div className="flex flex-col gap-4 text-justify w-1/2 mx-auto">
+      <div className="flex flex-col gap-4 text-justify md:w-1/2 mx-auto">
         <p className="text-xl indent-8">
           A long time ago, when nothing existed yet, three spirits decide to have a competition to determine which one of them is the strongest, and therefore deserves to be king.
         </p>

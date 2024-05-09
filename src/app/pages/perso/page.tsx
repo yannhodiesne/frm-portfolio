@@ -27,7 +27,6 @@ import dnd17 from "./dnd/17.jpg";
 import others1 from "./others/1.jpg";
 import others2 from "./others/2.jpg";
 import others3 from "./others/3.jpg";
-import others4 from "./others/4.jpg";
 import others5 from "./others/5.jpg";
 import others6 from "./others/6.jpg";
 import others7 from "./others/7.jpg";
@@ -128,7 +127,7 @@ export default function PersonalWorkPage() {
         ))}
       </div>
       <h1 className="text-2xl uppercase">Others</h1>
-      <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="gap-4 grid grid-cols-1 lg:grid-cols-3">
         {[
           { img: others2, class: ""},
           { img: others1, class: ""},
@@ -143,10 +142,10 @@ export default function PersonalWorkPage() {
       </div>
       <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {[
-          { img: others7, class: "col-span-full lg:col-span-1"},
-          { img: others8, class: "col-span-full 2xl:col-span-2"},
-          { img: others9, class: "col-span-full lg:col-span-1"},
-          { img: others3, class: "2xl:col-span-3"},
+          { img: others7, class: ""},
+          { img: others8, class: "2xl:col-span-2"},
+          { img: others9, class: ""},
+          { img: others3, class: "xl:col-span-2 2xl:col-span-3"},
           { img: others5, class: ""},
         ].map(image => (
           <ClickableImage
