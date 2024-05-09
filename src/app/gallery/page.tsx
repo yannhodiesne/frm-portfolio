@@ -4,6 +4,7 @@ import personalWork from "./personalwork.jpg";
 import shortMovie from "./shortmovie.jpg";
 import storyboard from "./storyboard.jpg";
 import visdevBg from "./visdev_bg.jpg";
+import PageLayout from "@/components/pageLayout/pageLayout";
 
 function GalleryButton({
   children,
@@ -45,19 +46,21 @@ function GalleryButton({
 
 export default function GalleryPage() {
   return (
-    <div className="w-2/3 mx-auto grid grid-cols-1 gap-4 md:grid-cols-2">
-      <GalleryButton path="/pages/storyboard" image={storyboard}>
-        Storyboard
-      </GalleryButton>
-      <GalleryButton path="/pages/visdevbg" image={visdevBg}>
-        Visual development / background
-      </GalleryButton>
-      <GalleryButton path="/pages/shortmovie" image={shortMovie}>
-        Short movie: The origin of world and men
-      </GalleryButton>
-      <GalleryButton path="/pages/perso" image={personalWork} objectClass="object-[50%_10%]">
-        Personal work
-      </GalleryButton>
-    </div>
+    <PageLayout backLink="/">
+      <div className="w-2/3 mx-auto grid grid-cols-1 gap-4 md:grid-cols-2">
+        <GalleryButton path="/pages/storyboard" image={storyboard}>
+          Storyboard
+        </GalleryButton>
+        <GalleryButton path="/pages/visdevbg" image={visdevBg}>
+          Visual development / background
+        </GalleryButton>
+        <GalleryButton path="/pages/shortmovie" image={shortMovie}>
+          Short movie: The origin of world and men
+        </GalleryButton>
+        <GalleryButton path="/pages/perso" image={personalWork} objectClass="object-[50%_10%]">
+          Personal work
+        </GalleryButton>
+      </div>
+    </PageLayout>
   );
 }

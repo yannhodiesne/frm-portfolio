@@ -35,7 +35,7 @@ export default function Home() {
               <Link href="/pages/storyboard">DEMOREEL</Link>
             </h1>
             <h1 className={menuHoverAnimation}>
-              <Link href="/pages/gallery">GALLERY</Link>
+              <Link href="/gallery">GALLERY</Link>
             </h1>
             <h1 className={menuHoverAnimation}>
               <Link href="/pages/about">ABOUT</Link>

@@ -4,16 +4,23 @@ import Banner from "../banner/banner";
 
 export default function PageLayout({
   children,
-  padding
+  padding,
+  backLink
 }: Readonly<{
   children: React.ReactNode,
-  padding?: number | undefined
+  padding?: number | undefined,
+  backLink?: string | undefined
 }>) {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="h-36">
+      <header className="h-36 grid grid-cols-3">
+        <div className="justify-self-start pl-16 flex items-center text-gray-500">
+          <Link href={backLink ? backLink : "/gallery"}>
+            &#706; Back
+          </Link>
+        </div>
         <Link href="/">
-          <Logo className="h-full w-auto mx-auto" />
+          <Logo className="h-36 w-auto mx-auto" />
         </Link>
       </header>
       <main className={`
