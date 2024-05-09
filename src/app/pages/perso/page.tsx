@@ -1,4 +1,7 @@
+import Image from "next/image";
 import ClickableImage from "@/components/clickableImage/clickableImage";
+
+import hardworking from "./hardworking.png";
 
 import arles1 from "./arlesiennes/1.jpg";
 import arles2 from "./arlesiennes/2.jpg";
@@ -54,9 +57,17 @@ import tcopb17 from "./tcopb/17.jpg";
 export default function PersonalWorkPage() {
   return (
     <div className="flex flex-col gap-8">
-      <p className="text-3xl text-center">
-        On this page you&apos;ll find various work on personal projects, such as webcomics, illustrations and other shenanigans.
-      </p>
+      <div className="flex flex-col gap-8 md:flex-row items-center">
+        <Image
+          src={hardworking}
+          alt="Hard working Fanny"
+          draggable={false}
+          className="h-auto basis-1/3 w-full mx-auto"
+        />
+        <p className="text-3xl text-center basis-2/3">
+          On this page you&apos;ll find various work on personal projects, <br className="hidden xl:block" />such as webcomics, illustrations and other shenanigans.
+        </p>
+      </div>
       <p className="text-xl pt-16">
         I was born in Arles in the south of France. These are arlesian girls, wearing the traditional costume.
       </p>
