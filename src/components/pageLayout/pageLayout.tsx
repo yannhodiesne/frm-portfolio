@@ -3,9 +3,11 @@ import Logo from "../logo/logo";
 import Banner from "../banner/banner";
 
 export default function PageLayout({
-  children
+  children,
+  padding
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode,
+  padding?: number | undefined
 }>) {
   return (
     <div className="flex flex-col min-h-screen">
@@ -14,7 +16,10 @@ export default function PageLayout({
           <Logo className="h-full w-auto mx-auto" />
         </Link>
       </header>
-      <main className="2xl:container 2xl:mx-auto flex flex-col justify-center grow min-h-[50vh]">
+      <main className={`
+        2xl:container 2xl:mx-auto flex flex-col justify-center grow min-h-[50vh]
+        pt-4 ${padding ? `px-${padding}` : "px-8"}
+      `}>
         {children}
       </main>
       <footer>

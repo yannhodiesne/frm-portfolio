@@ -5,7 +5,7 @@ import BackgroundColor from "@/components/backgroundColor/backgroundColor";
 
 export default function AboutPage() {
   return (
-    <div className="px-8">
+    <>
       <BackgroundColor color="#9F675A" />
       <Image
         src={foni}
@@ -25,6 +25,6 @@ export default function AboutPage() {
           f.regestemistral@hotmail.com
         </Link>
       </p>
-    </div>
+    </>
   );
 }

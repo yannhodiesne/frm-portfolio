@@ -52,7 +52,7 @@ export default function GalleryPage() {
       <GalleryButton path="/pages/visdevbg" image={visdevBg}>
         Visual development / background
       </GalleryButton>
-      <GalleryButton path="/pages/wip" image={shortMovie}>
+      <GalleryButton path="/pages/shortmovie" image={shortMovie}>
         Short movie: The origin of world and men
       </GalleryButton>
       <GalleryButton path="/pages/perso" image={personalWork} objectClass="object-[50%_10%]">

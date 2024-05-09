@@ -31,7 +31,7 @@ import tcVd5 from "./visdev/tchouk/5.jpg";
 
 export default function VisDevBgPage() {
   return (
-    <div className="flex flex-col gap-8 pt-8 md:pt-0 px-8">
+    <div className="flex flex-col gap-8 md:pt-0">
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 md:grid-cols-[33%_1fr]">
         <div className="flex flex-col justify-center">
           <p className="text-2xl text-center">

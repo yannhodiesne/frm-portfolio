@@ -1,8 +1,6 @@
-import Script from "next/script";
-
 export default function StoryboardPage() {
   return (
-    <div className="flex flex-col gap-8 px-8">
+    <div className="flex flex-col gap-8">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 pt-8 md:pt-0">
         <div className="flex justify-center">
           <p className="my-auto text-center">
@@ -26,7 +24,6 @@ export default function StoryboardPage() {
             allowFullScreen>
           </iframe>
         </div>
-        <Script src="https://player.vimeo.com/api/player.js"></Script>
       </div>
       <p className="text-2xl">
         Below you&apos;ll find some personal work and projects.

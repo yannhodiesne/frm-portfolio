@@ -54,7 +54,7 @@ import tcopb17 from "./tcopb/17.jpg";
 
 export default function PersonalWorkPage() {
   return (
-    <div className="flex flex-col gap-8 px-8">
+    <div className="flex flex-col gap-8">
       <h1 className="text-2xl uppercase">Arlésiennes</h1>
       <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {[
@@ -102,17 +102,17 @@ export default function PersonalWorkPage() {
       <h1 className="text-2xl uppercase">The Curse Of Pirate&apos;s Bay</h1>
       <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {[
-          { img: tcopb4, class: "col-span-full 2xl:col-span-2"},
-          { img: tcopb5, class: "col-span-full 2xl:col-span-2"},
-          { img: tcopb1, class: ""},
-          { img: tcopb6, class: ""},
-          { img: tcopb2, class: ""},
-          { img: tcopb3, class: ""},
-          { img: tcopb9, class: ""},
-          { img: tcopb8, class: ""},
           { img: tcopb7, class: "col-span-full 2xl:col-span-2"},
+          { img: tcopb8, class: ""},
+          { img: tcopb9, class: ""},
           { img: tcopb17, class: "col-span-full 2xl:col-span-2"},
           { img: tcopb16, class: "col-span-full 2xl:col-span-2"},
+          { img: tcopb4, class: "col-span-full 2xl:col-span-2"},
+          { img: tcopb5, class: "col-span-full 2xl:col-span-2"},
+          { img: tcopb3, class: ""},
+          { img: tcopb2, class: ""},
+          { img: tcopb6, class: ""},
+          { img: tcopb1, class: ""},
           { img: tcopb10, class: ""},
           { img: tcopb11, class: ""},
           { img: tcopb12, class: ""},
@@ -128,12 +128,21 @@ export default function PersonalWorkPage() {
         ))}
       </div>
       <h1 className="text-2xl uppercase">Others</h1>
-      <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+      <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {[
           { img: others2, class: ""},
-          { img: others4, class: "lg:col-span-2 2xl:col-span-1"},
           { img: others1, class: ""},
           { img: others6, class: ""},
+        ].map(image => (
+          <ClickableImage
+            key={image.img.src}
+            src={image.img}
+            className={image.class}
+          />
+        ))}
+      </div>
+      <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+        {[
           { img: others7, class: "col-span-full lg:col-span-1"},
           { img: others8, class: "col-span-full 2xl:col-span-2"},
           { img: others9, class: "col-span-full lg:col-span-1"},

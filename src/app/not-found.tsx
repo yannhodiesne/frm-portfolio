@@ -5,7 +5,7 @@ import image from "./404.png";
 
 export default function NotFoundPage() {
   return (
-    <PageLayout>
+    <PageLayout padding={0}>
       <Link href="/">
         <Image
           src={image}
