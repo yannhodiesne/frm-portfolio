@@ -12,7 +12,7 @@ export default function AboutPage() {
         alt="Fanny Regeste Mistral"
         className="-z-10 invisible 2xl:visible absolute h-1/2 w-auto top-1/3 right-0 absolute"
       />
-      <p className="2xl:w-4/5 text-justify text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl ">
+      <p className="2xl:w-4/5 text-justify text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl py-8">
         Hi !<br />
         I am Fanny, an artist from Lyon, France.<br />
         <br />
