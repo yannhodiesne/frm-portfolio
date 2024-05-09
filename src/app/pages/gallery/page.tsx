@@ -55,7 +55,7 @@ export default function GalleryPage() {
       <GalleryButton path="/pages/wip" image={shortMovie}>
         Short movie: The origin of world and men
       </GalleryButton>
-      <GalleryButton path="/pages/wip" image={personalWork} objectClass="object-[50%_10%]">
+      <GalleryButton path="/pages/perso" image={personalWork} objectClass="object-[50%_10%]">
         Personal work
       </GalleryButton>
     </div>
