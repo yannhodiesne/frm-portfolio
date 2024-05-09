@@ -7,7 +7,8 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 # Install dependencies based on the preferred package manager
-COPY package.json yarn.lock .yarn ./
+COPY .yarn ./.yarn
+COPY package.json yarn.lock .yarnrc.yml ./
 RUN yarn --frozen-lockfile
 
 # Rebuild the source code only when needed
@@ -34,7 +35,7 @@ ENV NEXT_TELEMETRY_DISABLED 1
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next/standalone ./public
 
 # Set the correct permission for prerender cache
 RUN mkdir .next
