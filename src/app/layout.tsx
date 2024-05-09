@@ -24,6 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        {process.env.NODE_ENV === "production" && (
+          <script defer src="https://analytics.wetcrapaud.fr/script.js" data-website-id="1c7b9f15-e0a9-41ca-861e-7782ee037693"></script>
+        )}
+      </head>
       <body className={`${headersFont.variable} ${bodyFont.variable}`}>
         {children}
       </body>
