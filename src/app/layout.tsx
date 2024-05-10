@@ -13,6 +13,7 @@ const bodyFont = Mulish({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.fannyregestemistral.fr/"),
   title: "Fanny Regeste Mistral",
   description: "Portfolio de Fanny Regeste Mistral (Storyboard, Illustration, Animation)",
 };
