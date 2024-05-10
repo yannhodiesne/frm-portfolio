@@ -14,7 +14,7 @@ export default function PageLayout({
   return (
     <div className="flex flex-col min-h-screen">
       <header className="h-36 grid grid-cols-[auto_1fr] md:grid-cols-3">
-        <div className="justify-self-start pl-4 md:pl-16 flex items-center text-gray-500">
+        <div id="back" className="justify-self-start pl-4 md:pl-16 flex items-center text-gray-500">
           <Link href={backLink ? backLink : "/gallery"}>
             &#706; Back
           </Link>

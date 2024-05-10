@@ -6,7 +6,7 @@ import BackgroundColor from "@/components/backgroundColor/backgroundColor";
 export default function AboutPage() {
   return (
     <>
-      <BackgroundColor color="#9F675A" />
+      <BackgroundColor color="#9F675A" backButton="#8F040B" />
       <Image
         src={foni}
         alt="Fanny Regeste Mistral"

@@ -1,14 +1,20 @@
 'use client';
 
 export default function BackgroundColor({
-  color
+  color,
+  backButton
 }: Readonly<{
-  color: string
+  color: string,
+  backButton: string
 }>) {
   return (
     <style global jsx>{`
       body {
         background: ${color};
+      }
+
+      #back {
+        color: ${backButton};
       }
     `}</style>
   );
