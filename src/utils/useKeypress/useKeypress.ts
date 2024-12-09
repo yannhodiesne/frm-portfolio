@@ -6,7 +6,7 @@ export default function useKeypress(
   keys: string[] | string,
   handler: KeypressHandler
 ) {
-  const eventListenerRef = useRef<KeypressHandler>();
+  const eventListenerRef = useRef<KeypressHandler>(undefined);
 
   useEffect(() => {
     eventListenerRef.current = (event: KeyboardEvent) => {
