@@ -20,7 +20,7 @@ function GalleryButton({
   return (
     <Link
       href={path}
-      className="aspect-[16/9] relative group"
+      className="aspect-video relative group"
     >
       <h1 className={`
         absolute top-1/2 left-1/2

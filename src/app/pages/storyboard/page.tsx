@@ -16,7 +16,7 @@ export default function StoryboardPage() {
             &ldquo;Potobot&rdquo; (Xilam animation)<br />
           </p>
         </div>
-        <div className="relative aspect-[16/9]">
+        <div className="relative aspect-video">
           <iframe
             src="https://player.vimeo.com/video/901255300?h=0752843f64"
             className="absolute top-0 left-0 w-full h-full border-0"
@@ -35,7 +35,7 @@ export default function StoryboardPage() {
           "https://www.youtube-nocookie.com/embed/a6CH9KwJP8M?si=KphZqZRAOtECunSW",
           "https://www.youtube-nocookie.com/embed/7QGnh8BMWrA?si=Gp7roDI_Fi9mxzC_"
         ].map(url => (
-          <div key={url} className="relative aspect-[16/9]">
+          <div key={url} className="relative aspect-video">
             <iframe
               src={url}
               className="absolute top-0 left-0 w-full h-full border-0"

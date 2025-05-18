@@ -30,7 +30,7 @@ export default function ShortMoviePage() {
       <h1 className="text-2xl uppercase text-center">
         Short Movie Animation: The Origin of World and Men
       </h1>
-      <div className="relative aspect-[16/9]">
+      <div className="relative aspect-video">
         <iframe
           src="https://player.vimeo.com/video/392172838?h=e5eb79b8ce"
           className="absolute top-0 left-0 w-full h-full border-0"
