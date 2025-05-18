@@ -41,6 +41,10 @@ export default function Home() {
               <Link href="/pages/about">ABOUT</Link>
             </h1>
           </nav>
+
+          <footer className="mx-auto w-fit pt-6">
+            Made by Yann Hodiesne. © {new Date().getFullYear()} Fanny Regeste Mistral. All rights reserved.
+          </footer>
         </div>
       </main>
     </div>
