@@ -17,9 +17,10 @@ export default function StoryboardPage() {
           </p>
         </div>
         <div className="relative aspect-video">
+          <div className="absolute top-0 left-0 w-full h-full border-0 z-0 bg-gray-300 animate-pulse" />
           <iframe
             src="https://player.vimeo.com/video/901255300?h=0752843f64"
-            className="absolute top-0 left-0 w-full h-full border-0"
+            className="absolute top-0 left-0 w-full h-full border-0 z-1"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen>
           </iframe>
@@ -36,9 +37,10 @@ export default function StoryboardPage() {
           "https://www.youtube-nocookie.com/embed/7QGnh8BMWrA?si=Gp7roDI_Fi9mxzC_"
         ].map(url => (
           <div key={url} className="relative aspect-video">
+            <div className="absolute top-0 left-0 w-full h-full border-0 z-0 bg-gray-300 animate-pulse" />
             <iframe
               src={url}
-              className="absolute top-0 left-0 w-full h-full border-0"
+              className="absolute top-0 left-0 w-full h-full border-0 z-1"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"

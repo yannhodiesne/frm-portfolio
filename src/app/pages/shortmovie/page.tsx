@@ -31,9 +31,10 @@ export default function ShortMoviePage() {
         Short Movie Animation: The Origin of World and Men
       </h1>
       <div className="relative aspect-video">
+        <div className="absolute top-0 left-0 w-full h-full border-0 z-0 bg-gray-300 animate-pulse" />
         <iframe
           src="https://player.vimeo.com/video/392172838?h=e5eb79b8ce"
-          className="absolute top-0 left-0 w-full h-full border-0"
+          className="absolute top-0 left-0 w-full h-full border-0 z-1"
           allow="autoplay; fullscreen; picture-in-picture"
           allowFullScreen>
         </iframe>
