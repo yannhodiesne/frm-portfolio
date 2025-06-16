@@ -21,10 +21,10 @@ onKeyStroke('Escape', () => {
 
 <template>
   <div :class="`my-auto ${props.class}`">
-    <NuxtPicture
+    <NuxtImg
       :src="props.src"
       alt=""
-      :img-attrs="{ class: 'h-auto w-full cursor-pointer' }"
+      class="h-auto w-full cursor-pointer"
       draggable="false"
       @click="isOpen = true"
     />
@@ -38,10 +38,10 @@ onKeyStroke('Escape', () => {
     "
     @click="isOpen = false"
   >
-    <NuxtPicture
+    <NuxtImg
       :src="props.src"
       alt=""
-      :img-attrs="{ class: 'h-auto w-auto max-w-[90vw] max-h-[90vh] cursor-pointer' }"
+      class="h-auto w-auto max-w-[90vw] max-h-[90vh] cursor-pointer"
       draggable="false"
       @click="isOpen = false"
     />

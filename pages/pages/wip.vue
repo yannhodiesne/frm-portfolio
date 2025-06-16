@@ -14,11 +14,11 @@ defineRouteRules({
       href="/"
       aria-label="Home"
     >
-      <NuxtPicture
+      <NuxtImg
         src="/wip/wip.png"
         alt="Work in progress!"
         draggable="false"
-        :img-attrs="{ class: 'max-h-[60vh] w-auto mx-auto' }"
+        class="max-h-[60vh] w-auto mx-auto"
       />
     </NuxtLink>
   </PageLayout>

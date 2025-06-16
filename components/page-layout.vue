@@ -20,12 +20,12 @@ const props = defineProps<{
         href="/"
         aria-label="Home"
       >
-        <NuxtPicture
+        <NuxtImg
           src="/logo.png"
           alt="Fanny Regeste Mistral"
           draggable="false"
           priority
-          :img-attrs="{ class: 'w-auto h-36 mx-auto' }"
+          class="w-auto h-36 mx-auto"
         />
       </NuxtLink>
     </header>

@@ -16,7 +16,7 @@ onUnmounted(() => {
 
 <template>
   <PageLayout>
-    <NuxtPicture
+    <NuxtImg
       src="/about/foni.png"
       alt="Fanny Regeste Mistral"
       class="-z-10 invisible 2xl:visible absolute h-1/2 w-auto top-1/3 right-0"

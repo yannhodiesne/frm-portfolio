@@ -23,11 +23,11 @@ const props = defineProps<{
     >
       {{ props.name }}
     </h1>
-    <NuxtPicture
+    <NuxtImg
       :src="props.image"
       :alt="props.name"
       draggable="false"
-      :img-attrs="{ class: 'h-full transition duration-300 object-cover brightness-50 lg:brightness-100 group-hover:brightness-50 object-center' }"
+      class="h-full transition duration-300 object-cover brightness-50 lg:brightness-100 group-hover:brightness-50 object-center"
     />
   </NuxtLink>
 </template>

@@ -14,12 +14,12 @@ defineRouteRules({
       href="/"
       aria-label="Home"
     >
-      <NuxtPicture
+      <NuxtImg
         src="/404.png"
         alt="404: not found"
         draggable="false"
         priority
-        :img-attrs="{ class: 'min-h-[45vh] w-auto object-cover md:max-h-[60vh] md:mx-auto' }"
+        class="min-h-[45vh] w-auto object-cover md:max-h-[60vh] md:mx-auto"
       />
     </NuxtLink>
   </PageLayout>

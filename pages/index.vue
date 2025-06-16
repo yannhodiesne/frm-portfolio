@@ -22,12 +22,12 @@ const menuHoverAnimation = 'transform transition duration-250 hover:scale-[1.17]
             priority
           >
           <div class="absolute bottom-0 w-full h-1/2">
-            <NuxtPicture
+            <NuxtImg
               src="/logo.png"
               alt="Fanny Regeste Mistral"
               draggable="false"
               priority
-              :img-attrs="{ class: 'w-auto h-full mx-auto' }"
+              class="w-auto h-full mx-auto"
             />
           </div>
         </div>

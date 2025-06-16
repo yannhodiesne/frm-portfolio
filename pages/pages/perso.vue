@@ -70,12 +70,11 @@ const othersSecondGroup = [
   <PageLayout>
     <div class="flex flex-col gap-8">
       <div class="flex flex-col gap-8 md:flex-row items-center">
-        <NuxtPicture
+        <NuxtImg
           src="/perso/hardworking.png"
           alt="Hard working Fanny"
           draggable="false"
-          :img-attrs="{ class: 'h-auto basis-1/3 w-full mx-auto' }"
-          class="h-auto w-full basis-1/3 mx-auto"
+          class="h-auto basis-1/3 w-full mx-auto"
         />
         <p class="text-3xl text-center basis-2/3">
           On this page you&apos;ll find various work on personal projects, <br class="hidden xl:block">such as webcomics, illustrations and other shenanigans.
