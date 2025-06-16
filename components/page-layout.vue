@@ -21,7 +21,7 @@ const props = defineProps<{
         aria-label="Home"
       >
         <NuxtImg
-          src="/logo.png"
+          src="/logo.webp"
           alt="Fanny Regeste Mistral"
           draggable="false"
           preload
