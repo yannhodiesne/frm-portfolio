@@ -15,7 +15,7 @@ defineRouteRules({
       aria-label="Home"
     >
       <NuxtImg
-        src="/404.png"
+        src="/404.webp"
         alt="404: not found"
         draggable="false"
         preload

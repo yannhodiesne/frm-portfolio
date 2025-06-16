@@ -17,14 +17,13 @@ const menuHoverAnimation = 'transform transition duration-250 hover:scale-[1.17]
           <img
             src="/background.webp"
             alt="Animated silly walk"
-            class="opacity-60 max-h-[80svh] w-auto mx-auto"
+            class="opacity-60 max-h-[80svh] lg:h-[80svh] w-auto mx-auto aspect-video"
             draggable="false"
             preload
           >
           <div class="absolute bottom-0 w-full h-1/2">
             <NuxtImg
-              format="webp"
-              src="/logo.png"
+              src="/logo.webp"
               alt="Fanny Regeste Mistral"
               draggable="false"
               preload
@@ -33,7 +32,7 @@ const menuHoverAnimation = 'transform transition duration-250 hover:scale-[1.17]
           </div>
         </div>
 
-        <nav class="mx-auto w-auto pt-6 grid md:grid-flow-col md:auto-cols-fr md:gap-16 gap-12 text-4xl md:text-5xl lg:text-6xl justify-items-center">
+        <nav class="mx-auto w-auto pt-6 pb-6 grid md:grid-flow-col md:auto-cols-fr md:gap-16 gap-12 text-4xl md:text-5xl lg:text-6xl justify-items-center">
           <h1 :class="menuHoverAnimation">
             <NuxtLink href="/pages/storyboard">
               DEMOREEL
@@ -51,7 +50,7 @@ const menuHoverAnimation = 'transform transition duration-250 hover:scale-[1.17]
           </h1>
         </nav>
 
-        <footer class="mx-auto w-fit pt-6">
+        <footer class="mx-auto w-fit text-center">
           Made by Yann Hodiesne. © {{ new Date().getFullYear() }} Fanny Regeste Mistral. All rights reserved.
         </footer>
       </div>

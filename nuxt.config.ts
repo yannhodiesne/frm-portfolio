@@ -41,7 +41,7 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    format: ['webp']
+    format: ['avif', 'webp']
   },
   ogImage: {
     enabled: false
