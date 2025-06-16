@@ -24,7 +24,7 @@ const props = defineProps<{
           src="/logo.png"
           alt="Fanny Regeste Mistral"
           draggable="false"
-          priority
+          preload
           class="w-auto h-36 mx-auto"
         />
       </NuxtLink>

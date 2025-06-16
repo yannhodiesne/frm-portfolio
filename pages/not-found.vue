@@ -18,7 +18,7 @@ defineRouteRules({
         src="/404.png"
         alt="404: not found"
         draggable="false"
-        priority
+        preload
         class="min-h-[45vh] w-auto object-cover md:max-h-[60vh] md:mx-auto"
       />
     </NuxtLink>

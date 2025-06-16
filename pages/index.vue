@@ -19,14 +19,15 @@ const menuHoverAnimation = 'transform transition duration-250 hover:scale-[1.17]
             alt="Animated silly walk"
             class="opacity-60 max-h-[80svh] w-auto mx-auto"
             draggable="false"
-            priority
+            preload
           >
           <div class="absolute bottom-0 w-full h-1/2">
             <NuxtImg
+              format="webp"
               src="/logo.png"
               alt="Fanny Regeste Mistral"
               draggable="false"
-              priority
+              preload
               class="w-auto h-full mx-auto"
             />
           </div>
