@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  :root {
+    --foreground-rgb: 49, 4, 4;
+    --background-rgb: 255, 255, 255;
+  }
+
+  body {
+    user-select: none;
+    color: rgb(var(--foreground-rgb));
+    background-color: rgb(var(--background-rgb));
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  footer {
+    background-color: rgb(var(--background-rgb));
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
