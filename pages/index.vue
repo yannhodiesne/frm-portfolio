@@ -7,17 +7,17 @@ const menuHoverAnimation = 'transform transition duration-250 hover:scale-[1.17]
 </script>
 
 <template>
-  <div class="flex flex-col md:flex-row gap-4 p-8 justify-center items-center min-h-screen">
+  <div class="flex flex-col lg:flex-row gap-4 p-8 justify-center items-center min-h-screen">
     <aside>
-      <SocialBanner class="flex-row px-8 justify-center md:flex-col md:px-0 md:py-8" />
+      <SocialBanner class="flex-row px-8 justify-center lg:flex-col lg:px-0 lg:py-8" />
     </aside>
     <main>
       <div class="mx-auto">
-        <div class="relative">
+        <div class="relative lg:h-[80svh] aspect-video">
           <img
             src="/background.webp"
             alt="Animated silly walk"
-            class="opacity-60 max-h-[80svh] lg:h-[80svh] w-auto mx-auto aspect-video"
+            class="opacity-60 w-full"
             draggable="false"
             preload
           >
@@ -32,7 +32,7 @@ const menuHoverAnimation = 'transform transition duration-250 hover:scale-[1.17]
           </div>
         </div>
 
-        <nav class="mx-auto w-auto pt-6 pb-6 grid md:grid-flow-col md:auto-cols-fr md:gap-16 gap-12 text-4xl md:text-5xl lg:text-6xl justify-items-center">
+        <nav class="mx-auto w-auto pt-6 pb-6 grid lg:grid-flow-col lg:auto-cols-fr lg:gap-16 gap-12 text-4xl md:text-5xl lg:text-6xl justify-items-center">
           <h1 :class="menuHoverAnimation">
             <NuxtLink href="/pages/storyboard">
               DEMOREEL
