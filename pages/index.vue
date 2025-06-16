@@ -14,16 +14,20 @@ const menuHoverAnimation = 'transform transition duration-250 hover:scale-[1.17]
     <main>
       <div class="mx-auto">
         <div class="relative lg:h-[80svh] aspect-video">
-          <img
+          <NuxtImg
             src="/background.webp"
+            sizes="100vw lg:80vw"
             alt="Animated silly walk"
+            :modifiers="{ animated: true }"
             class="opacity-60 w-full"
             draggable="false"
             preload
-          >
+            fetchpriority="high"
+          />
           <div class="absolute bottom-0 w-full h-1/2">
             <NuxtImg
               src="/logo.webp"
+              sizes="100vw lg:60vw"
               alt="Fanny Regeste Mistral"
               draggable="false"
               preload
