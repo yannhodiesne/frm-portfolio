@@ -1,15 +1,15 @@
 # syntax = docker/dockerfile:1
 
-FROM oven/bun:1 AS build
+FROM node:lts-slim AS build
 WORKDIR /src
 
-COPY package.json bun.lock ./
-RUN bun install --frozen-lockfile --production
+COPY package.json package-lock.json ./
+RUN npm ci
 
 COPY --link . .
 
 ENV NODE_ENV=production
-RUN bun run generate
+RUN npm run generate
 
 FROM caddy:2-alpine AS final
 WORKDIR /app
